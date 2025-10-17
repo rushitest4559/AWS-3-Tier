@@ -1,0 +1,4 @@
+# Terraform state files should never be committed to Git
+*.tfstate
+*.tfstate.backup
+.terraform
