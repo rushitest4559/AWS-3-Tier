@@ -1,5 +1,9 @@
 resource "aws_vpc" "Three_Tier_VPC" {
   cidr_block = "10.0.0.0/16"
+
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+
   tags = {
     Name      = "Three_Tier_VPC"
     createdby = "terraform"
@@ -10,6 +14,8 @@ resource "aws_subnet" "Public-Web-Subnet-AZ-1" {
   vpc_id            = aws_vpc.Three_Tier_VPC.id
   availability_zone = "ap-south-1a"
   cidr_block        = "10.0.1.0/24"
+
+  map_public_ip_on_launch = true
 
   tags = {
     Name      = "Public-Web-Subnet-AZ-1"
@@ -43,6 +49,8 @@ resource "aws_subnet" "Public-Web-Subnet-AZ-2" {
   vpc_id            = aws_vpc.Three_Tier_VPC.id
   availability_zone = "ap-south-1b"
   cidr_block        = "10.0.4.0/24"
+
+  map_public_ip_on_launch = true
 
   tags = {
     Name      = "Public-Web-Subnet-AZ-2"
