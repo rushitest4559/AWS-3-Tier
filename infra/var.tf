@@ -15,3 +15,8 @@ variable "public_subnets" {
 variable "private_subnets" {
   type = map(list(string))
 }
+
+variable "security_groups" {
+  type = map(map(list(map(string))))
+}
+

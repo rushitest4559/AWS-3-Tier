@@ -12,3 +12,7 @@ output "public_subnets" {
         az => [for s in values(aws_subnet.public): s.id if s.availability_zone == az]
   }
 }
+
+output "vpc_id" {
+  value = aws_vpc.main.id
+}
