@@ -97,11 +97,3 @@ Built by **Rushikesh Nikam** (Nov 2025)
 GitHub: [https://github.com/rushitest4559](https://github.com/rushitest4559)
 
 ---
-
-## 📌 Notes
-
-* Use this as a showcase project for resumes, portfolios, and interviews.
-* Rename the repo to reflect the project title.
-* Update your Naukri project section with the same name.
-
-This project represents practical knowledge, real cloud architecture, cost savings, and production-style automation — ideal for DevOps, Cloud, and SRE roles.
